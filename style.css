@@ -188,3 +188,25 @@ footer {
         font-size: 22px;
     }
 }
+
+cta _buton (
+    /* gaya visual */
+    background_color:#e74c3c; /* warna merah kontras */
+   color: white;
+  forvt -weight: bold;
+
+  /* ukuran dan bentuk */
+  padding : 8px 15px; /* jarak didalam tombol */
+  border -radius: 5px /* susdut membulat */
+
+ /* efek hover */
+ transition: background -color 0.3s ease 
+}
+
+.cta buton hover {
+     background -color: 3c0392b; /* warna sedikit lebih gelap saat di-hover */
+}
+
+/* humastikan tombol tidak memiliki style linkbawaan */
+.nav -cta a {
+       text -decoration: none
