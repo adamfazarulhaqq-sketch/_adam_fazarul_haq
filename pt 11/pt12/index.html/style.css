@@ -1,0 +1,137 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 200vh;
+    padding-top: 90px;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 15px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    z-index: 999;
+}
+
+/* LOGO */
+.logo a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+.menu a.active {
+    background: #ff7a18;
+    font-weight: bold;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 140%;
+    left: 0;
+
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    list-style: none;
+    min-width: 170px;
+
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.dropdown:hover .submenu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.submenu li a {
+    display: block;
+    padding: 12px 15px;
+    color: #fff;
+}
+
+.submenu li a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* CTA BUTTON */
+.cta {
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 80px 40px;
+    color: white;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}

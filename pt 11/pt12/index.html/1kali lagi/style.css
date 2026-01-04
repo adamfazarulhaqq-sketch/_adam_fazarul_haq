@@ -1,0 +1,135 @@
+/* ============================= */
+/* RESET & DASAR */
+/* ============================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6f06e6;
+    padding: 30px;
+}
+
+/* ============================= */
+/* JUDUL */
+/* ============================= */
+#judul-utama {
+    text-align: center;
+    color: #d63384;
+    border-bottom: 3px dashed #000;
+    margin-bottom: 20px;
+}
+
+/* ============================= */
+/* PARAGRAF */
+/* ============================= */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-style: italic;
+}
+
+/* CLASS SELECTOR */
+.highlight {
+    background-color: yellow;
+    color: #333;
+    padding: 5px;
+}
+
+/* ============================= */
+/* LINK + PSEUDO CLASS */
+/* ============================= */
+.nav-link {
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.nav-link:link {
+    color: blue;
+}
+
+.nav-link:visited {
+    color: purple;
+}
+
+.nav-link:hover {
+    background-color: orange;
+    color: black;
+}
+
+.nav-link:active {
+    color: red;
+}
+
+/* ============================= */
+/* PRODUCT CARD */
+/* ============================= */
+.product-card {
+    background-color: rgb(226, 13, 13);
+    border: 2px solid #fdfcfc;
+    padding: 15px;
+    margin: 15px 0;
+    width: 300px;
+}
+
+.product-card h3 {
+    color: #0056b3;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+#diskon {
+    text-decoration: underline;
+}
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.cta-button:active {
+    background-color: #003c80;
+    transform: translateY(2px);
+}
+
+/* ============================= */
+/* INTERAKTIF BOX */
+/* ============================= */
+.interaktif-box {
+    padding: 20px;
+    border: 2px solid #999;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 300px;
+}
+
+.interaktif-box:hover {
+    border-color: green;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    background-color: #d4edda;
+}
